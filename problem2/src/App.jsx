@@ -1,17 +1,13 @@
-import Form from './form/Form'
+import Form from "./form/Form";
 
-import './App.scss'
-
+import "./App.scss";
 
 function App() {
-
-
   return (
     <>
-      <Form/>
-    
+      <Form />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

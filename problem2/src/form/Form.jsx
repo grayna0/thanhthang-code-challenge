@@ -9,7 +9,7 @@ function Form() {
   const [amount, setAmount] = useState(0);
   const [switchCurenncy, setSwitchCurenncy] = useState(false);
   const [loader, setLoader] = useState(false);
-
+console.log(exchangeRate,loader);
   useEffect(() => {
     const fetchToken = async () => {
       try {
@@ -76,7 +76,7 @@ function Form() {
       {loader ? (
         <img className="result" src="./Spinner-1s-24px.gif" alt="1" />
       ) : (
-        loader&& exchangeRate &&  <h2 className="result">
+        !loader && exchangeRate &&  <h2 className="result">
           {fromCurrency} = {(amount * exchangeRate).toFixed(6)}
           {toCurrency}
         </h2>
