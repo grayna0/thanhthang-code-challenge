@@ -1,1 +1,0 @@
-"push -u origin main"
