@@ -5,7 +5,7 @@ function Form() {
   const [tokens, setTokens] = useState();
   const [fromCurrency, setFromCurrency] = useState("");
   const [toCurrency, setToCurrency] = useState("");
-  const [exchangeRate, setExchangeRate] = useState(undefined);
+  const [exchangeRate, setExchangeRate] = useState(null);
   const [amount, setAmount] = useState(0);
   const [switchCurenncy, setSwitchCurenncy] = useState(false);
   const [loader, setLoader] = useState(false);
