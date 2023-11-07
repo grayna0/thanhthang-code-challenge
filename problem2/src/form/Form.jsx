@@ -76,7 +76,7 @@ console.log(exchangeRate,loader);
       {loader ? (
         <img className="result" src="./Spinner-1s-24px.gif" alt="1" />
       ) : (
-        !loader && exchangeRate &&  <h2 className="result">
+        exchangeRate &&  <h2 className="result">
           {fromCurrency} = {(amount * exchangeRate).toFixed(6)}
           {toCurrency}
         </h2>
